@@ -9,6 +9,8 @@
 var foodTables = [{name: "Cheese", GI: 0}, {name: "Meats", GI: 0}, {name: "Broccoli", GI: 15},
 {name: "Coconut", GI: 35}]
 
+var input = document.getElementById("sizing-addon1").value;
 
+console.log(input);
 
 })()
