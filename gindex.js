@@ -11,7 +11,7 @@ var foodTables = [{name: "Cheese", GI: 0}, {name: "Meats", GI: 0}, {name: "Brocc
 
 
 function showFoods() {
-    alert("The value of the input field was changed.");
+    alert("we received data!");
 }
 
 document.getElementById("userInput").oninput = showFoods;
