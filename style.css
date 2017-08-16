@@ -9,6 +9,11 @@
 	margin:0 auto;
 }
 
+.glyphicon {
+	color: red;
+	
+}
+
  .userInput {
 	 width: 50%;
 	margin:0 auto;

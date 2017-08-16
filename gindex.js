@@ -11,14 +11,14 @@ var foodTables = [{name: "Cheese", GI: 0}, {name: "Meats", GI: 0}, {name: "Brocc
 
 
 function showFoods() {
-    var newInput;
-    document.getElementById("textInput") = newInput;
-    var newResults;
-    document.getElementById("results") = newResults;
+    // var newInput;
+    // document.getElementById("textInput") = newInput;
+    // var newResults;
+    // document.getElementById("results") = newResults;
 
-    if(newInput == foodTables.name){
-        document.getElementById("results") = foodTables.name +""+ foodTables.GI;
-    }
+    // if(newInput == foodTables.name){
+    //     document.getElementById("results") = foodTables.name +""+ foodTables.GI;
+    // }
     alert("we received data!");
 }
 
