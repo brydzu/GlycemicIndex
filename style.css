@@ -1,24 +1,24 @@
 html, body {
-	background-color: #DAFAFA;
+	background-color: #4286f4;
 }
 
 .myheader {
 	text-align: center;
-	margin-bottom: 80px;
+	margin-bottom: 80px; 
 	margin-top: 55px;
-	background-color: #DAFAFA;
+	background-color: #4286f4;
 } 
 
 .input-group {
 	width: 40%;  
 	margin:0 auto;
 	margin-bottom: 80px;
-	background-color: #DAFAFA;
 }
 
 .results-container {
 	width: 43%; 
 	margin:0 auto;
+
 }
 
 .glyphicon {
