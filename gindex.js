@@ -11,11 +11,12 @@ var foodTables = [{name: "Cheese", GI: 0}, {name: "Meats", GI: 0}, {name: "Brocc
 
 function showFoods() {
     
-    var newInput = document.getElementById("textInput").value;
+    var newInput = document.getElementById("textInput").value.toLowerCase;
 
     for(var i =0; i<foodTables.length; i++){
-        if(newInput == foodTables[i].name){
-        document.getElementById("results").innerHTML = foodTables[i].name +""+ foodTables[i].GI;
+        if(newInput == foodTables[i].name.toLowerCase){
+        document.getElementById("results").innerHTML = foodTables[i].name +" "+ foodTables[i].GI;
+
         }
     }
 }
