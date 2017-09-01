@@ -9,10 +9,12 @@
 var foodTables = [{name: "Cheese", GI: 0}, {name: "Meats", GI: 0}, {name: "Broccoli", GI: 15},
 {name: "Coconut", GI: 35}];
 
-// is texinput accesible from html wihout passing it as parameter to showFoods
+// is texinput accesible from html wihout passing it as parameter to showFoods?
+
+
 function showFoods() {
-    // var newInput = "";
-    var newInput = document.getElementById("textInput").innerHTML;
+    // var newInput = document.getElementById("textInput").innerHTML;
+    var newInput = document.getElementById("textInput").value;
     
     // for(var i =0; i<foodTables.length; i++){
     //     if(newInput == foodTables[i].name){
