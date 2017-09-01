@@ -7,18 +7,21 @@
 
 // temporary solution for testing
 var foodTables = [{name: "Cheese", GI: 0}, {name: "Meats", GI: 0}, {name: "Broccoli", GI: 15},
-{name: "Coconut", GI: 35}]
+{name: "Coconut", GI: 35}];
 
-
+// is texinput accesible from html wihout passing it as parameter to showFoods
 function showFoods() {
-    var newInput = "";
-    document.getElementById("textInput") = newInput;
+    // var newInput = "";
+    var newInput = document.getElementById("textInput").innerHTML;
     
-    for(var i =0; i<foodTables.length; i++){
-        if(newInput == foodTables.name){
-        document.getElementById("results").innerHTML = foodTables.name +""+ foodTables.GI;
-        }
-    }
+    // for(var i =0; i<foodTables.length; i++){
+    //     if(newInput == foodTables[i].name){
+    //     document.getElementById("results").innerHTML = foodTables[i].name +""+ foodTables[i].GI;
+    //     }
+    // }
+
+    // document.getElementById("results").innerHTML = newInput;
+    console.log('u write'+ newInput);
 }
 
 document.getElementById("textInput").oninput = showFoods;
