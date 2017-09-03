@@ -19,10 +19,10 @@ function showFoods() {
     //     //document.getElementById("results").innerHTML = foodTables[i].name +" "+ foodTables[i].GI;
     //     }
     var matchingFoods = [];
-    // function findAllFoods() {
-        for(var i =0; i<foodTables.length; i++){
-            if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){    
-                matchingFoods.push(i.name +" "+ i.GI);
+
+    for(var i =0; i<foodTables.length; i++){
+        if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){    
+            matchingFoods.push(foodTables[i].name +" "+ foodTables[i].GI);
             }
         }
             // }
