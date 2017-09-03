@@ -14,25 +14,14 @@ function showFoods() {
     
     var newInput = document.getElementById("textInput").value.toLowerCase();
     
-    // for(var i =0; i<foodTables.length; i++){
-    //     if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){
-    //     //document.getElementById("results").innerHTML = foodTables[i].name +" "+ foodTables[i].GI;
-    //     }
     var matchingFoods = [];
 
     for(var i =0; i<foodTables.length; i++){
-        if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){    
-            matchingFoods.push(foodTables[i].name +" "+ foodTables[i].GI);
+        if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){  
+            matchingFoods += foodTables[i].name +" "+ foodTables[i].GI +"</p>";
             }
         }
-            // }
-    //     var listOfMatchingFoods = foodTables.filter(function(foodTable) {
-    //     for(var i =0; i<foodTables.length; i++){
-    //     return foodTables[i].name.toLowerCase().indexOf(newInput)!==-1;
-    //     }
-    // })
     document.getElementById("results").innerHTML = matchingFoods;
     }
-//}
 document.getElementById("textInput").oninput = showFoods;
 })()
