@@ -37,6 +37,7 @@ function showFoods() {
     }
         
     document.getElementById("results").innerHTML = matchingFoods;
+    
     // if(foodTables[i].GI<35){
     //     foodBackgrundColor.style.backgroundColor = "#ff0000";}
 
