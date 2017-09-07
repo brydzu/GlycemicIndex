@@ -26,37 +26,42 @@ function showFoods() {
         if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){  
             matchingFoods.push({
                 name: foodTables[i].name,
-                GI: foodTables[i].GI
+                gIndex: foodTables[i].GI
             });
-            // if (foodTables[i].GI<35){
-            //     foodBackgrundColor.style.backgroundColor = "#009933";
-            // } else if (foodTables[i].GI<55) {
-            //     foodBackgrundColor.style.backgroundColor = "#ff9933";
-            // } else {
-            //     foodBackgrundColor.style.backgroundColor = "#cc0000";
-            // }
+            // if (foodTables[i].GI<35){foodBackgrundColor.style.backgroundColor = "#009933";
+            // } else if (foodTables[i].GI<55) { foodBackgrundColor.style.backgroundColor = "#ff9933";
+            // } else {foodBackgrundColor.style.backgroundColor = "#cc0000";}
         }
     }
     //item
     matchingFoods.map(function (item){
-        if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){
+        if(item.name.toLowerCase().indexOf(newInput)!==-1){
             var element = document.createElement("div");
+            
             function changeColor(){
                 var colorLabel;
-                if(item.GI<36){
-                    colorLabel = low;
-                }else if(item.GI<56){
-                    colorLabel = medium;
+                if(item.gIndex<36){
+                    //colorLabel = "low";
+                    foodBackgrundColor.style.backgroundColor = "#009933";
+                }else if(item.gIndex<56){
+                    //colorLabel = "medium";
+                    foodBackgrundColor.style.backgroundColor = "#ff9933";
                 }else{
-                    colorLabel = high;
+                    //colorLabel = "high";
+                    foodBackgrundColor.style.backgroundColor = "#cc0000";
                 }
+                //return colorLabel;
             }
+
+
+
+            element.innerHTML = "<div>" +item.name+ "</div>"+ "<div style" +changeColor() +">" +item.gIndex+ "</div>";
+            //remove Child
             document.getElementById("results").appendChild(element);
         }
-    
+    })
 
-
-    //document.getElementById("results").innerHTML = matchingFoods;
+    document.getElementById("results").innerHTML = matchingFoods;
     }
 
 document.getElementById("textInput").oninput = showFoods;
