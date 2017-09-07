@@ -25,39 +25,31 @@ function showFoods() {
     for(var i =0; i<foodTables.length; i++){
         if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){  
             matchingFoods.push({
-                name: foodTables[i].name,
+                foodName: foodTables[i].name,
                 gIndex: foodTables[i].GI
             });
-            // if (foodTables[i].GI<35){foodBackgrundColor.style.backgroundColor = "#009933";
-            // } else if (foodTables[i].GI<55) { foodBackgrundColor.style.backgroundColor = "#ff9933";
-            // } else {foodBackgrundColor.style.backgroundColor = "#cc0000";}
         }
     }
     //item
     matchingFoods.map(function (item){
-        if(item.name.toLowerCase().indexOf(newInput)!==-1){
+        if(item.foodName.toLowerCase().indexOf(newInput)!==-1){
             var element = document.createElement("div");
             
             function changeColor(){
-                var colorLabel;
+                var className;
                 if(item.gIndex<36){
-                    //colorLabel = "low";
-                    foodBackgrundColor.style.backgroundColor = "#009933";
+                    element.className = "low";
                 }else if(item.gIndex<56){
-                    //colorLabel = "medium";
-                    foodBackgrundColor.style.backgroundColor = "#ff9933";
+                    element.className = "medium";
                 }else{
-                    //colorLabel = "high";
-                    foodBackgrundColor.style.backgroundColor = "#cc0000";
+                    element.className = "high";
                 }
-                //return colorLabel;
+                return element.className;
             }
-
-
-
-            element.innerHTML = "<div>" +item.name+ "</div>"+ "<div style" +changeColor() +">" +item.gIndex+ "</div>";
+        document.getElementById("results").appendChild(element);
+        element.innerHTML = "<div>" +item.foodName+ "</div>"+ "<div style" +changeColor() +">" +item.gIndex+ "</div>";
             //remove Child
-            document.getElementById("results").appendChild(element);
+        //document.getElementById("results").appendChild(element);
         }
     })
 

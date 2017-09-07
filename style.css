@@ -2,6 +2,16 @@ html, body {
 	background-color: #666699;
 }
 
+.low {
+	background-color: #009933;
+}
+.medium {
+	background-color: #ff9933;
+}
+.high {
+	background-color: #cc0000;
+}
+
 .myheader {
 	text-align: center;
 	margin-bottom: 80px; 
