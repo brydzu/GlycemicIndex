@@ -13,8 +13,6 @@ var foodTables = [{name: "Cheese", GI: 0}, {name: "Meats", GI: 0}, {name: "Brocc
 {name: "Coconut", GI: 35}, {name: "Bread Montignac", GI: 34}, {name:"Bread ezekiel", GI: 35}, 
 {name: "Bread white" , GI: 60}, {name: "Bread", GI: 55} ];
 
-var foodBackgrundColor = document.querySelector("#results");
-
 function showFoods() {
     
     //var foodTables = JSON.parse(request.responseText);
@@ -30,8 +28,8 @@ function showFoods() {
             });
         }
     }
-    //item
-    matchingFoods.map(function (item){
+    
+    matchingFoods.map(function(item){
         if(item.foodName.toLowerCase().indexOf(newInput)!==-1){
             var element = document.createElement("div");
             
@@ -46,10 +44,10 @@ function showFoods() {
                 }
                 return element.className;
             }
+
         document.getElementById("results").appendChild(element);
-        element.innerHTML = "<div>" +item.foodName+ "</div>"+ "<div style" +changeColor() +">" +item.gIndex+ "</div>";
+        element.innerHTML = "<div>" +item.foodName+ "</div>"+ "<div style=" +changeColor() +">" +item.gIndex+ "</div>";
             //remove Child
-        //document.getElementById("results").appendChild(element);
         }
     })
 
