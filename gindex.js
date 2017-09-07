@@ -24,23 +24,39 @@ function showFoods() {
 
     for(var i =0; i<foodTables.length; i++){
         if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){  
-            matchingFoods += foodTables[i].name +" "+ foodTables[i].GI +"</p>";
-            
-            if (foodTables[i].GI<35){
-                foodBackgrundColor.style.backgroundColor = "#009933";
-            } else if (foodTables[i].GI<55) {
-                foodBackgrundColor.style.backgroundColor = "#ff9933";
-            } else {
-                foodBackgrundColor.style.backgroundColor = "#cc0000";
-            }
+            matchingFoods.push({
+                name: foodTables[i].name,
+                GI: foodTables[i].GI
+            });
+            // if (foodTables[i].GI<35){
+            //     foodBackgrundColor.style.backgroundColor = "#009933";
+            // } else if (foodTables[i].GI<55) {
+            //     foodBackgrundColor.style.backgroundColor = "#ff9933";
+            // } else {
+            //     foodBackgrundColor.style.backgroundColor = "#cc0000";
+            // }
         }
     }
-        
-    document.getElementById("results").innerHTML = matchingFoods;
+    //item
+    matchingFoods.map(function (item){
+        if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){
+            var element = document.createElement("div");
+            function changeColor(){
+                var colorLabel;
+                if(item.GI<36){
+                    colorLabel = low;
+                }else if(item.GI<56){
+                    colorLabel = medium;
+                }else{
+                    colorLabel = high;
+                }
+            }
+            document.getElementById("results").appendChild(element);
+        }
     
-    // if(foodTables[i].GI<35){
-    //     foodBackgrundColor.style.backgroundColor = "#ff0000";}
 
+
+    //document.getElementById("results").innerHTML = matchingFoods;
     }
 
 document.getElementById("textInput").oninput = showFoods;
