@@ -19,7 +19,7 @@ function showFoods() {
     var newInput = document.getElementById("textInput").value.toLowerCase(),
         matchingFoods = [];
 
-    for(var i =0; i<foodTables.length; i++){
+    for(var i =0, foodTableLength = foodTables.length; i<foodTableLength; i++){
         if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){  
             matchingFoods.push({
                 foodName: foodTables[i].name,
