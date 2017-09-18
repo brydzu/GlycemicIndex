@@ -16,9 +16,8 @@ var foodTables = [{name: "Cheese", GI: 0}, {name: "Meats", GI: 0}, {name: "Brocc
 function showFoods() {
     
     //var foodTables = JSON.parse(request.responseText);
-    var newInput = document.getElementById("textInput").value.toLowerCase();
-    
-    var matchingFoods = [];
+    var newInput = document.getElementById("textInput").value.toLowerCase(),
+        matchingFoods = [];
 
     for(var i =0; i<foodTables.length; i++){
         if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){  
