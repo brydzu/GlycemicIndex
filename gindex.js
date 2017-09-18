@@ -45,12 +45,10 @@ function showFoods() {
             }
 
         document.getElementById("results").appendChild(element);
-        element.innerHTML = "<div>" +item.foodName+ "</div>"+ "<div style=" +changeColor() +">" +item.gIndex+ "</div>";
+        element.innerHTML = "<div>"+item.foodName+"</div>"+"<div style="+changeColor()+">"+item.gIndex+"</div>"+"</p>";
             //remove Child
         }
     })
-
-    document.getElementById("results").innerHTML = matchingFoods;
     }
 
 document.getElementById("textInput").oninput = showFoods;
