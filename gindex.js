@@ -44,12 +44,13 @@ function showFoods() {
                 return element.className;
             }
 
-        document.getElementById("results").appendChild(element);
-        element.innerHTML = "<div>"+item.foodName+"</div>"+"<div style="+changeColor()+">"+item.gIndex+"</div>"+"</p>";
+    document.getElementById("results").appendChild(element);
+    element.innerHTML = "<div style="+changeColor()+">"+item.foodName+" "+item.gIndex+"</div>";
             //remove Child
+       
         }
     })
-    }
+}
 
 document.getElementById("textInput").oninput = showFoods;
 })()
