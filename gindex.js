@@ -49,7 +49,9 @@ function showFoods() {
                 return element.className;
             }
     resultsList.appendChild(element);        
-    element.innerHTML = "<div style="+changeColor()+">"+item.foodName+" "+item.gIndex+"</div>";        
+    //element.innerHTML = "<div style="+changeColor()+">"+item.foodName+" "+item.gIndex+"</div>";
+    element.innerHTML = "<div style="+changeColor()+">"+item.foodName+" "+
+    '<span class = "displayedIndex">' +item.gIndex+ '</span>'+"</div>";        
         }
     })
 
