@@ -17,7 +17,8 @@ function showFoods() {
     
     //var foodTables = JSON.parse(request.responseText);
     var newInput = document.getElementById("textInput").value.toLowerCase(),
-        matchingFoods = [];
+        matchingFoods = [],
+        resultsList = document.getElementById("results");
 
     for(var i =0, foodTableLength = foodTables.length; i<foodTableLength; i++){
         if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){  
@@ -27,13 +28,12 @@ function showFoods() {
             });
         }
     }
-    
-    matchingFoods.map(function(item){
-        var resultsList = document.getElementById("results");
-        // while (resultsList.hasChildNodes()) {   
-        // resultsList.removeChild(resultsList.firstChild);
-        // }
-        
+
+    while (resultsList.hasChildNodes()) {   
+        resultsList.removeChild(resultsList.firstChild);
+    }
+
+    matchingFoods.map(function(item){        
         if(item.foodName.toLowerCase().indexOf(newInput)!==-1){
             var element = document.createElement("div");
             
@@ -49,7 +49,6 @@ function showFoods() {
                 return element.className;
             }
     resultsList.appendChild(element);        
-    //document.getElementById("results").appendChild(element);
     element.innerHTML = "<div style="+changeColor()+">"+item.foodName+" "+item.gIndex+"</div>";        
         }
     })
