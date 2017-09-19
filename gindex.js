@@ -29,6 +29,11 @@ function showFoods() {
     }
     
     matchingFoods.map(function(item){
+        var resultsList = document.getElementById("results");
+        // while (resultsList.hasChildNodes()) {   
+        // resultsList.removeChild(resultsList.firstChild);
+        // }
+        
         if(item.foodName.toLowerCase().indexOf(newInput)!==-1){
             var element = document.createElement("div");
             
@@ -43,13 +48,12 @@ function showFoods() {
                 }
                 return element.className;
             }
-
-    document.getElementById("results").appendChild(element);
-    element.innerHTML = "<div style="+changeColor()+">"+item.foodName+" "+item.gIndex+"</div>";
-            //remove Child
-       
+    resultsList.appendChild(element);        
+    //document.getElementById("results").appendChild(element);
+    element.innerHTML = "<div style="+changeColor()+">"+item.foodName+" "+item.gIndex+"</div>";        
         }
     })
+
 }
 
 document.getElementById("textInput").oninput = showFoods;

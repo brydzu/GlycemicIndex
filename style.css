@@ -10,6 +10,7 @@ html, body {
 	padding-top: 4px;
 	padding-bottom: 4px;
 	margin-top: 1px;
+	padding-left: 6px;
 }
 .medium {
 	background-color: #ff9933;
@@ -19,6 +20,7 @@ html, body {
 	padding-top: 4px;
 	padding-bottom: 4px;
 	margin-top: 1px;
+	padding-left: 6px;
 }
 .high {
 	background-color: #cc0000;
@@ -28,6 +30,7 @@ html, body {
 	padding-top: 4px;
 	padding-bottom: 4px;
 	margin-top: 1px;
+	padding-left: 6px;
 }
 
 .myheader {
