@@ -1,3 +1,7 @@
-[{"name": "Cheese", "GI": 0}, {"name": "Meats", "GI": 0}, {"name": "Broccoli", "GI": 15},
-{"name": "Coconut", "GI": 35}, {"name": "Bread Montignac", "GI": 34}, {"name":"Bread ezekiel", "GI": 35}, 
-{"name": "Bread white" , "GI": 60}, {"name": "Bread", "GI": 55}]
+[{"name": "Foie gras", "GI": 0}, {"name": "Alcohol", "GI": 0}, {"name": "Fish (salmon, tuna...)", "GI": 0}, 
+{"name": "Cheese (mozzarella, cottage, cheddar...)", "GI": 0}, {"name": "Eggs", "GI": 0}, {"name": "Coffee, tea", "GI": 0}, 
+{"name": "Meats (beef, pork, poultry, veal, lamb...)", "GI": 0}, {"name": "Wine, champagne", "GI": 0}, {"name": "Cream", "GI": 0}, 
+{"name": "Sea food*** (oysters, shrimps, mussels...)", "GI": 0}, {"name": "Beef", "GI": 0}, 
+{"name": "Ham, cold cuts, sausages", "GI": 0}, {"name": "Mayonnaise (home-made: egg, oil, mustard)", "GI": 0}, 
+{"name": "Goose fat, margarine, vegetable fat", "GI": 0}, {"name": "Poultry*** (chicken, turkey...)", "GI": 0}, 
+{"name": "Soy sauce (unsweetened)", "GI": 0}, {"name": "Oil", "GI": 0}]

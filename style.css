@@ -1,5 +1,6 @@
 html, body {
 	background-color: #666699;
+	margin-top: 45px; 
 }
 
 .low {
@@ -70,3 +71,12 @@ html, body {
 	float: right;
 }
 
+ .footer {
+	text-align: center;
+	padding-top: 5px;
+	/* background-color: #4e4e59;  */
+}  
+
+.footerContainer {
+	background-color: #4e4e59; 
+}
