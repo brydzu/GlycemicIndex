@@ -39,4 +39,13 @@
 {"name": "Pumpernickel (Montignac)", "GI": 32}, {"name": "Bread Ezekiel", "GI": 35}, {"name": "Pomegranate", "GI": 35},
 {"name": "Bananas", "GI": 35}, {"name": "Amaranth (seeds)", "GI": 35}, {"name": "Yoghurt", "GI": 35},
 {"name": "Tomatoes (dried)", "GI": 35}, {"name": "Plums, Prunes", "GI": 35}, {"name": "Quinoa, (al dente)", "GI": 35},
-{"name": "Tomato juice", "GI": 35}, {"name": "Apricots", "GI": 35}, {"name": "Apple sauce (sugar free)", "GI": 35}]
+{"name": "Tomato juice", "GI": 35}, {"name": "Apricots", "GI": 35}, {"name": "Apple sauce (sugar free)", "GI": 35},
+{"name": "Yeast", "GI": 35}, {"name": "Oranges", "GI": 35}, {"name": "Mustard (Dijon)", "GI": 35},
+{"name": "Black beans", "GI": 35}, {"name": "Apple", "GI": 35}, {"name": "Kidney beans (pinto)", "GI": 35},
+{"name": "Sunflower seeds", "GI": 35}, {"name": "Figs", "GI": 35}, {"name": "Wasa™ fiber", "GI": 35},
+{"name": "Tomato sauce (sugar free)", "GI": 35}, {"name": "Falafel (chick peas)", "GI": 35}, {"name": "Wild rice", "GI": 35},
+{"name": "Nectarines", "GI": 35}, {"name": "Linum, Sesame (seeds)", "GI": 35}, {"name": "Chick pea flour", "GI": 35},
+{"name": "Cranberry bean, Borlotti bean, Roman bean", "GI": 35}, {"name": "Chick peas, Garbanzo beans", "GI": 35}, 
+{"name": "Peaches", "GI": 35}, {"name": "Celeriac, Knob celery, Turnip rooted celery", "GI": 35},
+{"name": "Quince", "GI": 35}, {"name": "Green peas", "GI": 35}, {"name": "Peas", "GI": 35}, 
+{"name": "Indian corn", "GI": 35}, {"name": "Coco", "GI": 35}, {"name": "Coconut", "GI": 35}]
