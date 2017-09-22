@@ -45,13 +45,13 @@ html, body {
 } 
 
 .input-group {
-	width: 40%;  
+	width: 90%;  
 	margin:0 auto;
 	margin-bottom: 80px;
 }
 
 .results-container {
-	width: 43%; 
+	width: 92%; 
 	margin:0 auto;
 }
 
@@ -79,4 +79,27 @@ html, body {
 
 .footerContainer {
 	background-color: #4e4e59; 
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.mainContainer > div {
+  flex: 1; /*grow*/
+}
+
+.leftContainer {
+	text-align: right;
+	width: 10%;
+}
+
+.rightContainer {
+	text-align: left;
+	width: 10%;
+}
+
+.centerContainer {
+	width: 80%;
 }
