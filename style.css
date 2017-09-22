@@ -1,5 +1,5 @@
 html, body {
-	background-color: #666699;
+	background-color: #caccce;
 	margin-top: 45px; 
 }
 
@@ -41,19 +41,19 @@ html, body {
 	text-align: center;
 	margin-bottom: 80px; 
 	margin-top: 55px;
-	background-color: #666699;
+	background-color: #caccce;
 } 
 
-.input-group {
-	width: 90%;  
+ .input-group {
+	width: 92%;  
 	margin:0 auto;
 	margin-bottom: 80px;
-}
+} 
 
-.results-container {
+ .results-container {
 	width: 92%; 
 	margin:0 auto;
-}
+} 
 
 .glyphicon {
 	color: red;	
@@ -71,15 +71,11 @@ html, body {
 	float: right;
 }
 
- .footer {
+.footerContainer {
 	text-align: center;
 	padding-top: 5px;
-	/* background-color: #4e4e59;  */
-}  
-
-.footerContainer {
-	background-color: #4e4e59; 
-}
+	font-size: 12px;
+}   
 
 .mainContainer {
   display: flex;
@@ -92,17 +88,11 @@ html, body {
 
 .leftContainer {
 	text-align: right;
-	width: 10%;
 }
 
 .rightContainer {
 	text-align: left;
-	width: 10%;
 	padding-right: 30px; 
-}
-
-.centerContainer {
-	width: 80%;
 }
 
 .greenDot {
@@ -128,13 +118,4 @@ html, body {
 	color: #cc0000;
 	background-color: #cc0000;
 	margin-right: 5px;
-}
-
-/* .foodPhoto {
-	width: 90px;
-	height: 90px;
-} */
-
-.arrow {
-	text-align: right;
 }
