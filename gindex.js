@@ -22,7 +22,7 @@ function showFoods() {
         resultsList = document.getElementById("results");
 
     for(var i =0, foodTableLength = foodTables.length; i<foodTableLength; i++){
-        if(foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){  
+        if(newInput!=="" && foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){  
             matchingFoods.push({
                 foodName: foodTables[i].name,
                 gIndex: foodTables[i].GI
