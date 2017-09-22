@@ -98,8 +98,43 @@ html, body {
 .rightContainer {
 	text-align: left;
 	width: 10%;
+	padding-right: 30px; 
 }
 
 .centerContainer {
 	width: 80%;
+}
+
+.greenDot {
+	border-radius: 50%;
+	width: 35px;
+	height: 35px; 
+	color: #009933;
+	background-color: #009933;
+	margin-right: 5px;
+}
+.orangeDot {
+	border-radius: 50%;
+	width: 35px;
+	height: 35px; 
+	color: #ff9933;
+	background-color: #ff9933;
+	margin-right: 5px;
+}
+.redDot {
+	border-radius: 50%;
+	width: 35px;
+	height: 35px; 
+	color: #cc0000;
+	background-color: #cc0000;
+	margin-right: 5px;
+}
+
+/* .foodPhoto {
+	width: 90px;
+	height: 90px;
+} */
+
+.arrow {
+	text-align: right;
 }
