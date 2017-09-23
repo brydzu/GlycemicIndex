@@ -7,12 +7,16 @@ html, body {
 	background-color: #009933;
 	border-radius: 3px;
 	font-size: 18px;
-	line-height: 1.3333333;
+	line-height: 1.3333333; 
 	padding-top: 4px;
 	padding-bottom: 4px;
 	margin-top: 1px;
 	padding-left: 6px;
 	padding-right: 6px;
+	position: relative; /*new*/
+	left: 1px; /*new*/
+	/* width: 100%;  */
+	overflow: auto; /*new*/
 }
 .medium {
 	background-color: #ff9933;
@@ -24,6 +28,9 @@ html, body {
 	margin-top: 1px;
 	padding-left: 6px;
 	padding-right: 6px;
+	position: relative; /*new*/
+	left: 1px; /*new*/
+	/* width: 100%; */
 }
 .high {
 	background-color: #cc0000;
@@ -35,6 +42,22 @@ html, body {
 	margin-top: 1px;
 	padding-left: 6px;
 	padding-right: 6px;
+	position: relative; /*new*/
+	left: 1px; /*new*/
+	/* width: 100%; new */
+}
+
+.displayedIndex {
+	/* float: right; */
+	display: inline-block;
+	position: absolute; /*new*/
+    right: 4px;         /*new*/
+}
+
+.displayedName {
+	display: inline-block;
+	position: absolute; /*new*/
+    left: 2px; 
 }
 
 .myheader {
@@ -67,10 +90,6 @@ html, body {
 	text-indent: 15px; 
 } 
 
-.displayedIndex {
-	float: right;
-}
-
 .footerContainer {
 	text-align: center;
 	padding-top: 5px;
@@ -95,14 +114,14 @@ html, body {
 	padding-right: 30px; 
 }
 
-.greenDot {
+ .greenDot {
 	border-radius: 50%;
 	width: 35px;
 	height: 35px; 
 	color: #009933;
 	background-color: #009933;
 	margin-right: 5px;
-}
+} 
 .orangeDot {
 	border-radius: 50%;
 	width: 35px;

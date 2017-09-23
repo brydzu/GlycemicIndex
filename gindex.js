@@ -53,8 +53,15 @@ function showFoods() {
             }
             
     resultsList.appendChild(element);        
-    element.innerHTML = "<div style="+changeColor()+">"+item.foodName+" "+
-    '<span class = "displayedIndex">' +item.gIndex+ '</span>'+"</div>";        
+
+     element.innerHTML = "<div style="+changeColor()+">"+
+    '<span>' +item.foodName+ '</span>'+
+    " "+
+    '<span class = "displayedIndex">' +item.gIndex+ '</span>'+
+    "</div>"; 
+
+    // element.innerHTML = "<div style="+changeColor()+">"+item.foodName+" "+
+    // '<span class = "displayedIndex">' +item.gIndex+ '</span>'+"</div>";        
         }
     })
 }
