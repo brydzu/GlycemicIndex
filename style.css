@@ -7,7 +7,7 @@ html, body {
 	background-color: #009933;
 	border-radius: 3px;
 	font-size: 18px;
-	line-height: 1.3333333; 
+	/* line-height: 1.3333333;  */
 	padding-top: 4px;
 	padding-bottom: 4px;
 	margin-top: 1px;
@@ -16,27 +16,27 @@ html, body {
 	position: relative; /*new*/
 	left: 1px; /*new*/
 	/* width: 100%;  */
-	overflow: auto; /*new*/
+	 /* overflow: auto;  */
 }
 .medium {
 	background-color: #ff9933;
 	border-radius: 3px;
 	font-size: 18px;
-	line-height: 1.3333333;
+	/* line-height: 1.3333333; */
 	padding-top: 4px;
 	padding-bottom: 4px;
 	margin-top: 1px;
 	padding-left: 6px;
 	padding-right: 6px;
-	position: relative; /*new*/
-	left: 1px; /*new*/
+	/* position: relative; 
+	left: 1px;  */
 	/* width: 100%; */
 }
 .high {
 	background-color: #cc0000;
 	border-radius: 3px;
 	font-size: 18px;
-	line-height: 1.3333333;
+	/* line-height: 1.3333333; */
 	padding-top: 4px;
 	padding-bottom: 4px;
 	margin-top: 1px;
