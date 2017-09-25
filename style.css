@@ -3,61 +3,65 @@ html, body {
 	margin-top: 45px; 
 }
 
+.mainContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.mainContainer > div {
+  flex: 1; /*grow*/
+}
+
+.leftContainer {
+	text-align: right;
+}
+
+.rightContainer {
+	text-align: left;
+	padding-right: 30px; 
+}
+
 .low {
 	background-color: #009933;
 	border-radius: 3px;
 	font-size: 18px;
-	/* line-height: 1.3333333;  */
-	padding-top: 4px;
-	padding-bottom: 4px;
+	padding: 4px 6px 4px 6px;
 	margin-top: 1px;
-	padding-left: 6px;
-	padding-right: 6px;
-	position: relative; /*new*/
-	left: 1px; /*new*/
-	/* width: 100%;  */
-	 /* overflow: auto;  */
+	position: relative;
+	left: 1px; 
+	overflow: hidden;  
 }
 .medium {
 	background-color: #ff9933;
 	border-radius: 3px;
 	font-size: 18px;
-	/* line-height: 1.3333333; */
-	padding-top: 4px;
-	padding-bottom: 4px;
+	padding: 4px 6px 4px 6px;
 	margin-top: 1px;
-	padding-left: 6px;
-	padding-right: 6px;
-	/* position: relative; 
-	left: 1px;  */
-	/* width: 100%; */
+	position: relative;
+	left: 1px; 
+	overflow: hidden; 
 }
 .high {
 	background-color: #cc0000;
 	border-radius: 3px;
 	font-size: 18px;
-	/* line-height: 1.3333333; */
-	padding-top: 4px;
-	padding-bottom: 4px;
+	padding: 4px 6px 4px 6px;
 	margin-top: 1px;
-	padding-left: 6px;
-	padding-right: 6px;
-	position: relative; /*new*/
-	left: 1px; /*new*/
-	/* width: 100%; new */
+	position: relative;
+	left: 1px; 
+	overflow: hidden; 
 }
 
 .displayedIndex {
-	/* float: right; */
 	display: inline-block;
-	position: absolute; /*new*/
-    right: 4px;         /*new*/
+	position: absolute;
+    right: 4px;         
 }
 
 .displayedName {
-	display: inline-block;
-	position: absolute; /*new*/
-    left: 2px; 
+	padding-right: 3px;
+	line-height: 15px;
+	overflow: hidden; 
 }
 
 .myheader {
@@ -95,24 +99,6 @@ html, body {
 	padding-top: 5px;
 	font-size: 12px;
 }   
-
-.mainContainer {
-  display: flex;
-  justify-content: center;
-}
-
-.mainContainer > div {
-  flex: 1; /*grow*/
-}
-
-.leftContainer {
-	text-align: right;
-}
-
-.rightContainer {
-	text-align: left;
-	padding-right: 30px; 
-}
 
  .greenDot {
 	border-radius: 50%;
