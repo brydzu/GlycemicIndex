@@ -15,7 +15,7 @@
 var foodTables = [{name: "Cheese", GI: 0}, {name: "Meats", GI: 0}, {name: "Celery", GI: 15}, {name: "Broccoli", GI: 15},
 {name: "Coconut", GI: 35}, {name: "Bread Montignac", GI: 34}, {name:"Bread ezekiel", GI: 35}, 
 {name: "Celeriac, Knob celery, Turnip rooted celery", GI: 35}, 
-{name: "Celeriac, Knob celery, Turnip rooted celery (cooked)", GI: 85},
+{name: "Celeriac, Knob celery, Turnip rooted celery (cooked)", GI: 105},
 {name: "Bread white" , GI: 60}, {name: "Bread", GI: 55}];
 
 function showFoods() {

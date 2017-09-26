@@ -53,15 +53,20 @@ html, body {
 }
 
 .displayedIndex {
-	display: inline-block;
+	 /* display: inline-block;  */
 	position: absolute;
-    right: 4px;         
+	right: 4px;         
 }
 
 .displayedName {
 	padding-right: 3px;
-	line-height: 15px;
-	overflow: hidden; 
+	/* line-height: 15px; */
+	overflow: hidden;   
+	float: left; 
+	width: 97%;  
+	/* padding-top: 5px;
+	padding-bottom: 5px; */
+	line-height: normal;
 }
 
 .myheader {
