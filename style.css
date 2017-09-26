@@ -21,8 +21,7 @@ html, body {
 	padding-right: 30px; 
 }
 
-.low {
-	background-color: #009933;
+.gindex {
 	border-radius: 3px;
 	font-size: 18px;
 	padding: 4px 6px 4px 6px;
@@ -31,41 +30,27 @@ html, body {
 	left: 1px; 
 	overflow: hidden;  
 }
-.medium {
-	background-color: #ff9933;
-	border-radius: 3px;
-	font-size: 18px;
-	padding: 4px 6px 4px 6px;
-	margin-top: 1px;
-	position: relative;
-	left: 1px; 
-	overflow: hidden; 
+
+.gindex-low {
+	background-color: #009933;
 }
-.high {
+.gindex-medium {
+	background-color: #ff9933;
+}
+.gindex-high {
 	background-color: #cc0000;
-	border-radius: 3px;
-	font-size: 18px;
-	padding: 4px 6px 4px 6px;
-	margin-top: 1px;
-	position: relative;
-	left: 1px; 
-	overflow: hidden; 
 }
 
 .displayedIndex {
-	 /* display: inline-block;  */
 	position: absolute;
 	right: 4px;         
 }
 
 .displayedName {
 	padding-right: 3px;
-	/* line-height: 15px; */
 	overflow: hidden;   
 	float: left; 
 	width: 97%;  
-	/* padding-top: 5px;
-	padding-bottom: 5px; */
 	line-height: normal;
 }
 
@@ -104,28 +89,21 @@ html, body {
 	padding-top: 5px;
 	font-size: 12px;
 }   
-
- .greenDot {
+.dot {
 	border-radius: 50%;
 	width: 35px;
 	height: 35px; 
-	color: #009933;
-	background-color: #009933;
-	margin-right: 5px;
-} 
-.orangeDot {
-	border-radius: 50%;
-	width: 35px;
-	height: 35px; 
-	color: #ff9933;
-	background-color: #ff9933;
 	margin-right: 5px;
 }
-.redDot {
-	border-radius: 50%;
-	width: 35px;
-	height: 35px; 
+.dot-greenDot {
+	color: #009933;
+	background-color: #009933;
+} 
+.dot-orangeDot {
+	color: #ff9933;
+	background-color: #ff9933;
+}
+.dot-redDot {
 	color: #cc0000;
 	background-color: #cc0000;
-	margin-right: 5px;
 }

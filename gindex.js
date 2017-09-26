@@ -25,8 +25,8 @@ function showFoods() {
         matchingFoods = [],
         resultsList = document.getElementById("results");
 
-    for(var i =0, foodTableLength = foodTables.length; i<foodTableLength; i++){
-        if(newInput!=="" && foodTables[i].name.toLowerCase().indexOf(newInput)!==-1){  
+    for(var i = 0, foodTableLength = foodTables.length; i<foodTableLength; i++){
+        if(newInput !== "" && foodTables[i].name.toLowerCase().indexOf(newInput) !== -1){  
             matchingFoods.push({
                 foodName: foodTables[i].name,
                 gIndex: foodTables[i].GI
@@ -34,37 +34,38 @@ function showFoods() {
         }
     }
 
+    //don't display anything when user deleted his input
     while (resultsList.hasChildNodes()) {   
         resultsList.removeChild(resultsList.firstChild);
     }
 
-    matchingFoods.map(function(item){        
+    // generating div for each case when user input matches any name of JSON table object
+    matchingFoods.map(function(item){    
+        
         if(item.foodName.toLowerCase().indexOf(newInput)!==-1){
             var element = document.createElement("div");
-            
+    
+    // and assigning one of three colors to each of these divs          
             function changeColor(){
                 var className;
                 if(item.gIndex<36){
-                    element.className = "low";
+                    element.className = "gindex gindex-low";
                 }else if(item.gIndex<56){
-                    element.className = "medium";
+                    element.className = "gindex gindex-medium";
                 }else{
-                    element.className = "high";
+                    element.className = " gindex gindex-high";
                 }
                 return element.className;
-            }
-            
-    resultsList.appendChild(element);        
+            }      
 
      element.innerHTML = "<div style="+changeColor()+">"+
     '<span class = "displayedName">' +item.foodName+ '</span>'+
     " "+
     '<span class = "displayedIndex">' +item.gIndex+ '</span>'+
-    "</div>"; 
+    "</div>";        
 
-    // element.innerHTML = "<div style="+changeColor()+">"+item.foodName+" "+
-    // '<span class = "displayedIndex">' +item.gIndex+ '</span>'+"</div>";        
-        }
+    resultsList.appendChild(element)
+    }
     })
 }
 
