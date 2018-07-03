@@ -1,6 +1,6 @@
 (function (){
 
-var url = "http://undefined2055.eu/GlycemicIndex/foodTables.json";
+var url = "http://syntaxerror2055.eu/GlycemicIndex/foodTables.json";
 var request = new XMLHttpRequest();
 
 request.onload = requestListener();
