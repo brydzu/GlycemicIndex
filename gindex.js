@@ -62,6 +62,7 @@ function showFoods() {
     })
 }
 
+document.getElementById("textInput").focus();
 document.getElementById("textInput").oninput = showFoods;
 }
 })()
